@@ -1,0 +1,10 @@
+---
+- name: Remove file (delete file)
+  ansible.builtin.file:
+    path: /etc/foo.txt
+    state: absent
+
+- name: Recursively remove directory
+  ansible.builtin.file:
+    path: /etc/foo
+    state: absent

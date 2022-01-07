@@ -1,0 +1,14 @@
+---
+- name: Copy repo to hosts
+  copy:
+    src: common.repo
+    dest: /etc/yum.repos.d/malleable_project.repo
+
+- name: Copy iptables & restart service
+  copy:
+    src: common.iptables
+    dest: /etc/sysconfig/iptables
+    owner: root
+    group: root
+    mode: '0740'
+  notify: restart iptables

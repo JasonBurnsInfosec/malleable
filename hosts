@@ -1,0 +1,7 @@
+[servers]
+server1 172.0.0.1
+server2 172.0.0.1
+
+[workstations]
+ws1 172.0.0.1
+ws2 172.0.0.1

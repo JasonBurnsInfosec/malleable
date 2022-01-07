@@ -1,0 +1,3 @@
+#define variables here
+http_port:  80
+sw_ver: 7.8.11
